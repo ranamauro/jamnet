@@ -1,0 +1,52 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="JamNet.MainPage"
+    Width="800" Height="800">
+
+    <Grid x:Name="layoutRoot" Background="White">
+        <MediaElement x:Name="player" AutoPlay="True" />
+        <StackPanel Orientation="Vertical" >
+            <StackPanel Orientation="Horizontal" >
+                <Button x:Name="play" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Width="65" Content="Play" Click="play_Click" />
+                <StackPanel VerticalAlignment="Center" Orientation="Vertical" >
+                    <TextBlock Text="Duration: " />
+                    <TextBlock Text="{Binding Value, ElementName=duration, Mode=OneWay}" />
+                    <Slider x:Name="duration" Width="250" Minimum="1" Maximum="6" Value="3" />
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" Orientation="Vertical" >
+                    <TextBlock Text="Volume: " />
+                    <TextBlock Text="{Binding Value, ElementName=volume, Mode=OneWay}" />
+                    <Slider x:Name="volume" Width="250" Maximum="120" Value="100" />
+                </StackPanel>
+                <CheckBox x:Name="samplesAsWaves" VerticalAlignment="Center" Margin="5,0,0,0" Content="Show samples as waves" ></CheckBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Canvas x:Name="songCanvas" Margin="5" Width="620" Height="520" MouseLeftButtonDown="songCanvas_MouseLeftButtonDown" MouseMove="songCanvas_MouseMove" MouseLeftButtonUp="songCanvas_MouseLeftButtonUp" ToolTipService.ToolTip="Select an existing sample to drag it or simply clicki to place an instance of the sample selected on the right listbox." >
+                    <Canvas.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="AliceBlue" Offset="0" />
+                            <GradientStop Color="Blue" Offset=".8" />
+                        </LinearGradientBrush>
+                    </Canvas.Background>
+                </Canvas>
+                <ListBox x:Name="sampleLibrary" Margin="5" Width="160" MouseLeftButtonUp="sampleLibrary_MouseLeftButtonUp" SelectionChanged="sampleLibrary_SelectionChanged" ToolTipService.ToolTip="Select a sample before clicking on an empty section of the left canvas to place an instance of it." >
+                    <ListBox.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Red" Offset="0" />
+                            <GradientStop Color="White" Offset="0.9" />
+                        </LinearGradientBrush>
+                    </ListBox.Background>
+                </ListBox>
+            </StackPanel>
+            <Canvas x:Name="wave" Margin="5" Width="780" Height="200" >
+                <Canvas.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Azure" Offset="0" />
+                        <GradientStop Color="Aquamarine" Offset="0.9" />
+                    </LinearGradientBrush>
+                </Canvas.Background>
+            </Canvas>
+        </StackPanel>
+    </Grid>
+</UserControl>

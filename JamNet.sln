@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JamNetSite", "JamNetSite", "{6E4BD1B7-6B67-4D0A-BAC8-E6E3F5282AB1}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/JamNetSite"
+		Debug.AspNetCompiler.PhysicalPath = "JamNetSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\JamNetSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/JamNetSite"
+		Release.AspNetCompiler.PhysicalPath = "JamNetSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\JamNetSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53981"
+		VWDVirtualPath = "/JamNetSite"
+		ProjOutputReferences = "{4E54E81A-6ADC-417B-BD2B-02C1934CAE9B}|ClientBin|false;"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JamNet", "JamNet\JamNet.csproj", "{4E54E81A-6ADC-417B-BD2B-02C1934CAE9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAudio", "NAudio\NAudio.csproj", "{DA4F02E3-0B5E-42CD-B8D9-5583FA51D66E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynthNet", "Synth\SynthNet.csproj", "{0D5807BD-95DA-41AF-BC87-B834E3DEBB6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JamShared", "JamShared\JamShared.csproj", "{921A7AC8-DD58-4390-8F58-F337FE0317D4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs05
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NAudio\\NAudio.csproj
+		SccProjectName1 = NAudio
+		SccLocalPath1 = NAudio
+		SccProjectUniqueName2 = JamNet\\JamNet.csproj
+		SccProjectName2 = JamNet
+		SccLocalPath2 = JamNet
+		SccWebProject3 = true
+		SccProjectUniqueName3 = JamNetSite
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = JamNetSite\\
+		SccProjectEnlistmentChoice3 = 2
+		SccProjectUniqueName4 = Synth\\SynthNet.csproj
+		SccProjectName4 = Synth
+		SccLocalPath4 = Synth
+		SccProjectUniqueName5 = JamShared\\JamShared.csproj
+		SccProjectName5 = JamShared
+		SccLocalPath5 = JamShared
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E4BD1B7-6B67-4D0A-BAC8-E6E3F5282AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E4BD1B7-6B67-4D0A-BAC8-E6E3F5282AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E4BD1B7-6B67-4D0A-BAC8-E6E3F5282AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E4BD1B7-6B67-4D0A-BAC8-E6E3F5282AB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E54E81A-6ADC-417B-BD2B-02C1934CAE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E54E81A-6ADC-417B-BD2B-02C1934CAE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E54E81A-6ADC-417B-BD2B-02C1934CAE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E54E81A-6ADC-417B-BD2B-02C1934CAE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4F02E3-0B5E-42CD-B8D9-5583FA51D66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4F02E3-0B5E-42CD-B8D9-5583FA51D66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4F02E3-0B5E-42CD-B8D9-5583FA51D66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4F02E3-0B5E-42CD-B8D9-5583FA51D66E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D5807BD-95DA-41AF-BC87-B834E3DEBB6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5807BD-95DA-41AF-BC87-B834E3DEBB6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5807BD-95DA-41AF-BC87-B834E3DEBB6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5807BD-95DA-41AF-BC87-B834E3DEBB6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{921A7AC8-DD58-4390-8F58-F337FE0317D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921A7AC8-DD58-4390-8F58-F337FE0317D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921A7AC8-DD58-4390-8F58-F337FE0317D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921A7AC8-DD58-4390-8F58-F337FE0317D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
