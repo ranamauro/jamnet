@@ -10,3 +10,5 @@ For demonstration purposes you can check out the prototype version of the music 
 http://www.ranamauro.com/JamNetSite/
 
 Here's a screenshot:
+
+![Screenshot](https://raw.githubusercontent.com/ranamauro/jamnet/master/img/e2c4ca57-928a-4645-9e48-722c915587d5.jpg)
